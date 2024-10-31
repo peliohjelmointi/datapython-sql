@@ -6,7 +6,16 @@
 import sqlite3 # asentuu pythonin mukana
 from sqlite3 import Error
 
-try:                      ## kokeile ../ niin saat virheen
-    conn = sqlite3.connect("./databases/movies.db")
-except Error as e:
-    print(e) # mikä tahansa virhe tuleekin, tulostetaan se
+# try:                      ## kokeile ../ niin saat virheen
+#     conn = sqlite3.connect("./databases/movies.db")    
+# except Error as e:
+#     print(e) # mikä tahansa virhe tuleekin, tulostetaan se
+
+
+with sqlite3.connect("./databases/movies.db") as conn:
+    pass
+
+
+
+
+
