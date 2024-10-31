@@ -26,4 +26,4 @@ movie_data = pd.read_csv('movies_as_csv.csv')
 
 # Write movie_data into sqlite table
                  #table   #connection #what to do       # index or not
-movie_data.to_sql('elokuvat',connection, if_exists='append',index=False)
+movie_data.to_sql('movies',connection, if_exists='append',index=False)
